@@ -1,0 +1,255 @@
+
+.container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+.h2 {
+    color: black;
+}
+
+.btn-primary{--bs-btn-color: #fff;
+    --bs-btn-bg: black;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #601b00;
+    --bs-btn-hover-border-color: #601b00;
+    --bs-btn-focus-shadow-rgb: 63, 147, 173;
+    --bs-btn-active-color: black;
+    --bs-btn-active-bg: #575656;
+    --bs-btn-active-border-color: #575656;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: black;
+    --bs-btn-disabled-bg: gray;
+    --bs-btn-disabled-border-color: gray}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*--main: #FF7F6F*/
+  --main: #0a2a43;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .my-header {
+      font-size: 1000px;
+  }
+}
+body {
+    /*background: var(--main);*/
+    background-image: url("bg/bg-main.png");
+    min-height: 1500px;
+    overflow-x: hidden !important;
+    margin: 0;
+}
+
+.no-overlap {
+    margin-right: -18vw;
+}
+
+@media (min-width: 1481px) {
+    section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .full {
+        width: 100%;
+        height: 100vh;
+    }
+
+}
+
+.no-overlap {
+    margin-right: 0;
+}
+
+section {
+position: relative;
+width: 100%;
+height: 50vw;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /*background: linear-gradient(to top, var(--main), transparent);*/
+    z-index: 20;
+}
+
+section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    /*background: var(--main);*/
+    background: #101942;
+    mix-blend-mode: color;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text {
+    position: relative;
+    /*bottom: 200px;*/
+    color: black;
+    font-size: 10em;
+    z-index: 5;
+}
+
+#road {
+    z-index: 10;
+}
+
+.header > section {
+}
+
+.header:before {
+    background: var(--main);
+}
+
+.header:after {
+    background: var(--main);
+}
+
+
+.info > section {
+    mix-blend-mode: normal;
+    background: var(--main);
+}
+
+
+
+/*.info h2 {*/
+/*    color: black;*/
+/*    font-size: 50px;*/
+/*}*/
+
+/*.info:before {*/
+/*    background: none;*/
+/*}*/
+
+/*.info:after {*/
+/*    background: none;*/
+/*    mix-blend-mode: normal;*/
+/*}*/
+
+/*.info img{*/
+/*    background: none;*/
+/*}*/
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: var(--main);
+}
+
+.sec h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sec p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.hidden-left {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-5rem);
+    transition: all 1s;
+}
+
+.hidden-right {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(5rem);
+    transition: all 1s;
+}
+
+.hidden-down{
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(10rem);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show-left {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show-right {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(-5rem);
+}
+
+.show-down {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(-1rem);
+}
+
+.section-div {
+    transform: translateY(-37%);
+}
+
+.logos {
+    display: flex;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 500ms;
+}
